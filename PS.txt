@@ -1,0 +1,74 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\Hussein> python
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> ^Z
+
+PS C:\Users\Hussein> cd Desktop
+PS C:\Users\Hussein\Desktop> python
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import subprocess
+>>> proc = subprocess.Popen("cmd.exe", stdin = subporcess.PIPE, stdout = subprocess.PIPE)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'subporcess' is not defined
+>>> proc = subprocess.Popen("cmd.exe", stdin = subprocess.PIPE, stdout = subprocess.PIPE)
+>>> stdin
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'stdin' is not defined
+>>> stdout
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'stdout' is not defined
+>>> import os
+>>> os.system(echo "Hello WOrld")
+  File "<stdin>", line 1
+    os.system(echo "Hello WOrld")
+                               ^
+SyntaxError: invalid syntax
+>>> os.system("echo Hello WOrld")
+Hello WOrld
+0
+>>> os.system("freqchk gaussian/dmtar_4.chk N 4 1 1 Y N >> man.txt")
+0
+>>> command="freqchk"
+>>> file= "C:\\Users\\Hussein\\Desktop\\gaussian\\dmtar_4.chk"
+>>> hyper_chem="N"
+>>> temp= 4
+>>> pressure =1
+>>> scale = 1
+>>> masses = "Y"
+>>> No = "N"
+>>> os.system(command file hyper_chem temp pressure scalemasses no)
+  File "<stdin>", line 1
+    os.system(command file hyper_chem temp pressure scalemasses no)
+                         ^
+SyntaxError: invalid syntax
+>>> os.system(command file hyper_chem temp pressure scale masses no)
+  File "<stdin>", line 1
+    os.system(command file hyper_chem temp pressure scale masses no)
+                         ^
+SyntaxError: invalid syntax
+>>> "dfkgjd fgnldfj" + 4
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: must be str, not int
+>>> os.system(f"".format(command file hyper_chem temp pressure scale masses no))
+  File "<stdin>", line 1
+    os.system(f"".format(command file hyper_chem temp pressure scale masses no))
+                                    ^
+SyntaxError: invalid syntax
+>>>
+
+command="freqchk"
+file= "C:\\Users\\Hussein\\Desktop\\gaussian\\dmtar_4.chk"
+hyper_chem="N"
+temp= 4
+pressure =1
+scale = 1
+masses = "Y"
+No = "N"

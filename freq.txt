@@ -1,0 +1,168 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\Hussein> cd Desktop
+PS C:\Users\Hussein\Desktop> python
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> "dgfjhg %r"%(ddjgjd)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'ddjgjd' is not defined
+>>> "dgfjhg %r"%("ddjgjd")
+"dgfjhg 'ddjgjd'"
+>>> "dgfjhg %r"%"ddjgjd"
+"dgfjhg 'ddjgjd'"
+>>> gjk = "dfjdjgj"
+>>> "dgfjhg %r"%gjk
+"dgfjhg 'dfjdjgj'"
+>>> print("dgfjhg %r"%gjk)
+dgfjhg 'dfjdjgj'
+>>> print("dgfjhg %r"%,gjk)
+  File "<stdin>", line 1
+    print("dgfjhg %r"%,gjk)
+                      ^
+SyntaxError: invalid syntax
+>>> "dgfjhg %r"%,"ddjgjd"
+  File "<stdin>", line 1
+    "dgfjhg %r"%,"ddjgjd"
+                ^
+SyntaxError: invalid syntax
+>>> "dgfjhg %r"%(,"ddjgjd")
+  File "<stdin>", line 1
+    "dgfjhg %r"%(,"ddjgjd")
+                 ^
+SyntaxError: invalid syntax
+>>> "dgfjhg %r",%"ddjgjd"
+  File "<stdin>", line 1
+    "dgfjhg %r",%"ddjgjd"
+                ^
+SyntaxError: invalid syntax
+>>> f"{}".format(gjk)
+  File "<stdin>", line 1
+SyntaxError: f-string: empty expression not allowed
+>>> os.system(f"".format(command file hyper_chem temp pressure scale masses no))
+  File "<stdin>", line 1
+    os.system(f"".format(command file hyper_chem temp pressure scale masses no))
+                                    ^
+SyntaxError: invalid syntax
+>>> command="freqchk"
+>>> >>> file= "C:\\Users\\Hussein\\Desktop\\gaussian\\dmtar_4.chk"
+  File "<stdin>", line 1
+    >>> file= "C:\\Users\\Hussein\\Desktop\\gaussian\\dmtar_4.chk"
+     ^
+SyntaxError: invalid syntax
+>>> >>> hyper_chem="N"
+  File "<stdin>", line 1
+    >>> hyper_chem="N"
+     ^
+SyntaxError: invalid syntax
+>>> >>> temp= 4
+  File "<stdin>", line 1
+    >>> temp= 4
+     ^
+SyntaxError: invalid syntax
+>>> >>> pressure =1
+  File "<stdin>", line 1
+    >>> pressure =1
+     ^
+SyntaxError: invalid syntax
+>>> >>> scale = 1
+  File "<stdin>", line 1
+    >>> scale = 1
+     ^
+SyntaxError: invalid syntax
+>>> >>> masses = "Y"
+  File "<stdin>", line 1
+    >>> masses = "Y"
+     ^
+SyntaxError: invalid syntax
+>>> >>> No = "N"
+  File "<stdin>", line 1
+    >>> No = "N"
+     ^
+SyntaxError: invalid syntax
+>>> command="freqchk"
+>>> file= "C:\\Users\\Hussein\\Desktop\\gaussian\\dmtar_4.chk"
+>>> hyper_chem="N"
+>>> temp= 4
+>>> pressure =1
+>>> scale = 1
+>>> masses = "Y"
+>>> No = "N"
+>>> os.system(command + file+ hyper_chem +temp +pressure +scale +masses +No)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'os' is not defined
+>>> import os
+>>> os.system(command + file+ hyper_chem +temp +pressure +scale +masses +No)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: must be str, not int
+>>> os.system(command + file+ hyper_chem temp +pressure +scale +masses +No)
+  File "<stdin>", line 1
+    os.system(command + file+ hyper_chem temp +pressure +scale +masses +No)
+                                            ^
+SyntaxError: invalid syntax
+>>> "fhjf jf" + 5
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: must be str, not int
+>>> print("fkgj fgkj" +4)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: must be str, not int
+>>> print("fkgj fgkj" ,4)
+fkgj fgkj 4
+>>> os.system(command + file+ hyper_chem , temp , pressure , scale , masses , No)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: system() takes at most 1 argument (6 given)
+>>> os.system(str(command + file+ hyper_chem , temp , pressure , scale , masses , No))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: str() takes at most 3 arguments (6 given)
+>>> temp= "4"
+>>> pressure ="1"
+>>> scale = "1"
+>>> os.system(command + file+ hyper_chem temp +pressure +scale +masses +No)
+  File "<stdin>", line 1
+    os.system(command + file+ hyper_chem temp +pressure +scale +masses +No)
+                                            ^
+SyntaxError: invalid syntax
+>>> os.system(command + file+ hyper_chem +temp +pressure +scale +masses +No)
+The filename, directory name, or volume label syntax is incorrect.
+1
+>>> file= "gaussian\dmtar_4.chk"
+>>> os.system(command + file+ hyper_chem +temp +pressure +scale +masses +No)
+The system cannot find the path specified.
+1
+>>> file= "C:/Users/Hussein/Desktop/gaussian/dmtar_4.chk"
+>>> os.system(command + file+ hyper_chem +temp +pressure +scale +masses +No)
+'freqchkC:' is not recognized as an internal or external command,
+operable program or batch file.
+1
+>>> command="freqchk "
+>>> file= "C:/Users/Hussein/Desktop/gaussian/dmtar_4.chk "
+>>> temp= "4 "
+>>> scale = "1 "
+>>> pressure ="1 "
+>>> os.system(command + file+ hyper_chem +temp +pressure +scale +masses +No)
+ Error parsing command line argument 5 string "YN" as floating point.
+ Error termination via Lnk1e at Sat Aug 04 11:47:17 2018.
+2057
+>>> masses = "Y "
+>>> os.system(command + file+ hyper_chem +temp +pressure +scale +masses +No)
+ Error parsing command line argument 5 string "Y" as floating point.
+ Error termination via Lnk1e at Sat Aug 04 11:47:45 2018.
+2057
+>>> os.system(command + file+ hyper_chem +temp +pressure +scale +masses +No >> men.txt)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'men' is not defined
+>>> os.system(command + file+ hyper_chem +temp +pressure +scale +masses +No + ">> men.txt")
+2057
+>>> hyper_chem="N "
+>>> os.system(command + file+ hyper_chem +temp +pressure +scale +masses +No + ">> men.txt")
+0
+>>>
