@@ -22,7 +22,7 @@ def get_params():
 	pressure = "1 "
 	
 	masses = str(input("Use Principal Masses? ")) + " "
-	project = "N "
+	project = "N " 
 	
 	#project = str(input("Project? ")) + " "
 	# output = str(">> " + input("Output file: "))
